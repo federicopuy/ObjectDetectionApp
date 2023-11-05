@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ObjectDetectionApp</string>
+    <string name="camera_permission_needed">The camera is needed for this app. Please grant the permission to use it.</string>
+    <string name="unknown">Unknown</string>
+    <string name="ok">OK</string>
+    <string name="permission">Camera Permission Required\n</string>
+</resources>

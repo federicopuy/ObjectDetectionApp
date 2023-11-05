@@ -1,0 +1,76 @@
+[versions]
+agp = "8.1.1"
+kotlin = "1.8.10"
+hilt-android = "2.44"
+core-ktx = "1.12.0"
+lifecycle-runtime-ktx = "2.7.0-beta01"
+cameraX = "1.2.3"
+tensorflow-lite = "0.4.0"
+tensorflow-lite-gpu = "2.9.0"
+pytorch-android-lite = "1.10.0"
+accompanistPermissions = "0.32.0"
+activityCompose = "1.8.0"
+
+junit = "4.13.2"
+mockk-agent = "1.13.5"
+mockk-android = "1.13.5"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+compose-bom = "2023.03.00"
+kotlinx-coroutines-test = "1.7.1"
+
+[libraries]
+# Android
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle-runtime-ktx" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-runtime-ktx" }
+
+# Compose
+ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Permissions
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
+
+# DI
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-android" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt-android" }
+
+# CameraX
+cameraX-core = { module = "androidx.camera:camera-core", version.ref = "cameraX" }
+cameraX-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraX" }
+cameraX-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraX" }
+cameraX-view = { module = "androidx.camera:camera-view", version.ref = "cameraX" }
+
+# TensorFlow Lite
+tensorflow-lite-task-vision = { module = "org.tensorflow:tensorflow-lite-task-vision", version.ref = "tensorflow-lite" }
+tensorflow-lite-gpu-delegate = { module = "org.tensorflow:tensorflow-lite-gpu-delegate-plugin", version.ref = "tensorflow-lite" }
+tensorflow-lite-gpu = { module = "org.tensorflow:tensorflow-lite-gpu", version.ref = "tensorflow-lite-gpu" }
+
+# Pytorch Mobile
+pytorch-android-lite = { module = "org.pytorch:pytorch_android_lite", version.ref = "pytorch-android-lite" }
+pytorch-android-torchvision = { module = "org.pytorch:pytorch_android_torchvision_lite", version.ref = "pytorch-android-lite" }
+
+# Unit Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk-agent = { module = "io.mockk:mockk-agent", version.ref = "mockk-agent" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockk-android" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines-test" }
+
+# Instrumentation Testing
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt-android" }
