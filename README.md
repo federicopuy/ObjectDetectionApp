@@ -25,4 +25,4 @@ By default its using TensorFlow Lite + NNAPI + mobilenetv1.tflite model, but you
 
 ## Architecture
 
-![ObjectDetectionApp](https://github.com/federicopuy/ObjectDetectionApp/assets/12384264/fc91025b-9ec3-4498-9c43-4bc12f9c5eac)
+![ObjectDetectionApp (1)](https://github.com/federicopuy/ObjectDetectionApp/assets/12384264/71403a1e-69d3-489a-9de3-f48fa0f0b30d)
