@@ -30,7 +30,7 @@ class PytorchObjectDetector(
     private val threshold: Float = 0.5f,
     private val maxResults: Int = 5,
     private val context: Context,
-    private val model: String = "yolov5s.`torchscript.ptl",
+    private val model: String = "yolov5s.torchscript.ptl",
     classesFileName: String = "classes.txt",
     private val prePostProcessor: PrePostProcessor = PrePostProcessor(threshold),
 ) : ObjectDetector {
